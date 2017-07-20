@@ -305,19 +305,17 @@
   margin: 30px 0 80px 0;
 }
 
-.main-contents-1 {
-  float: left;
-  width: 570px;
-  background-color: #fff;
-  display: inline-block;
-}
-
-.main-contents-2 {
+.main-contents-set {
   float: left;
   width: 570px;
   background-color: #fff;
   display: inline-block;
   margin-left: 30px;
+  position: relative;
+}
+
+.main-contents-set:first-child {
+  margin-left: 0;
 }
 
 .photo-set-1 {
@@ -325,10 +323,6 @@
   width: 570px;
   height: 390px;
   background-repeat: no-repeat;
-}
-
-.main-contents-container {
-  position: relative;
 }
 
 .main-contents-text {
@@ -348,7 +342,6 @@
 
 .main-photo-2 {
   background-image: url(../img/main/work-main-2.jpg);
-  position: relative;
 }
 
 .main-text-1 {
@@ -373,14 +366,13 @@
   vertical-align: middle;
 }
 
-.main-contents-container:hover > .overlay-1 {
+.main-contents-set:hover > .overlay-1 {
   opacity: 2;
 }
 
-.main-contents-container:hover > .main-contents-text {
+.main-contents-set:hover > .main-contents-text {
   color: #00bc9c;
 }
-
 
 .sub-contents {
   margin-top: 80px;
